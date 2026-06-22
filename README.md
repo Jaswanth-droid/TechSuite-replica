@@ -1,4 +1,4 @@
-# Mnemosync | Recall • Reconnect • Reclaim
+# Mnemosync | Recall • Reconnect • Reclaim...
 
 **Mnemosync** is an AI-powered companion designed specifically to assist individuals living with Alzheimer's and related dementias. By leveraging cutting-edge vision and conversation analysis, Mnemosync helps users recognize faces, recall past interactions, and stay on track with their daily routines.
 
