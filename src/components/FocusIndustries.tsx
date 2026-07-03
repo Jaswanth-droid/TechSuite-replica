@@ -16,7 +16,7 @@ export default function FocusIndustries() {
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="text-center">
-          <h2 className="text-5xl md:text-7xl font-bold text-slate-900">
+          <h2 className="text-5xl md:text-6xl font-bold text-slate-900">
             Focus Industries
           </h2>
 

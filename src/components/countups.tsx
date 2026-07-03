@@ -15,9 +15,9 @@ export default function StatsCard({
   suffix = "",
 }: StatsCardProps) {
   return (
-    <div className="bg-slate-100 rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition-all duration-300 h-52 flex flex-col justify-between">
+    <div className="bg-gray-300 rounded-2xl p-8  h-52 flex flex-col justify-between">
       <div>
-        <span className="inline-block bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-lg">
+        <span className="inline-block bg-gray-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-lg">
           {title}
         </span>
       </div>
@@ -27,7 +27,7 @@ export default function StatsCard({
           <CountUp end={end} duration={4} />
           {suffix}
         </h2>
-      </div>
+      </div> 
     </div>
   );
 }

@@ -90,7 +90,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="relative w-full py-24 px-4 sm:px-6 bg-white overflow-hidden">
+    <section id="services" className="relative w-full py-12 px-4 sm:px-6 bg-white overflow-hidden">
       {/* Subtle Hexagonal Background Pattern Overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03] flex items-center justify-center">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
