@@ -143,7 +143,7 @@ export default function Services() {
                 <div className="absolute inset-0 bg-[#4f46e5]/10 rounded-[18px] transition-all duration-500 ease-out transform scale-75 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-3 group-hover:rotate-12 z-0"></div>
                 
                 {/* Icon box container (Main Card) */}
-                <div className="relative z-10 w-16 h-16 rounded-[18px] bg-blue-50/50 border border-blue-100/60 flex items-center justify-center shadow-sm transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_12px_24px_rgba(79,70,229,0.15)] group-hover:border-indigo-300 bg-white">
+                <div className="relative z-10 w-16 h-16 rounded-[18px] bg-blue-50/50 border border-blue-100/60 flex items-center justify-center shadow-sm transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_12px_24px_rgba(79,70,229,0.15)] group-hover:border-indigo-300">
                   <div className="transition-transform duration-500 group-hover:scale-110">
                     {service.icon}
                   </div>

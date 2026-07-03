@@ -20,12 +20,30 @@ export default function Reg() {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    console.log(data);
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-    alert("Form submitted successfully!");
+    const result = await response.json();
 
-    reset();
-  };
+    console.log(result);
+
+    if (result.success) {
+      alert("Form submitted successfully!");
+      reset();
+    } else {
+      alert("Something went wrong!");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Error connecting to the server.");
+  }
+};
 
   return (
     <section className="w-full bg-white py-12 px-5">
@@ -36,7 +54,7 @@ export default function Reg() {
 
           <a
   href="mailto:contact@techsuitesystems.com"
-  className="flex flex-col justify-center border border-gray-300 rounded-2xl px-6 py-5 sm:px-8 sm:py-6 min-h-[150px] hover:shadow-lg transition-all duration-300"
+  className="flex flex-col justify-center border border-gray-300 rounded-2xl px-6 py-5 sm:px-8 sm:py-6 min-h-37.5 hover:shadow-lg transition-all duration-300"
 >
   <div className="flex items-center gap-3">
     <Mail className="w-8 h-8 text-gray-700" />
@@ -52,7 +70,7 @@ export default function Reg() {
 
           <a
   href="tel:+919940053883"
-  className="flex flex-col justify-center border border-gray-300 rounded-2xl px-6 py-5 sm:px-8 sm:py-6 min-h-[150px] hover:shadow-lg transition-all duration-300"
+  className="flex flex-col justify-center border border-gray-300 rounded-2xl px-6 py-5 sm:px-8 sm:py-6 min-h-37.5 hover:shadow-lg transition-all duration-300"
 >
   <div className="flex items-center gap-3">
     <Phone className="w-8 h-8 text-gray-700" />

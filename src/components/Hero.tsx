@@ -33,7 +33,7 @@ export default function Hero() {
         >
           <span>Innovative</span>
           <span>Reliable</span>
-          <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500 bg-clip-text text-transparent pb-2">
+          <span className="bg-linear-to-r from-orange-400 via-pink-400 to-indigo-500 bg-clip-text text-transparent pb-2">
             Client-Centric
           </span>
         </h1>

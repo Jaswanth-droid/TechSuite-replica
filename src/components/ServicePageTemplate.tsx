@@ -36,7 +36,7 @@ export default function ServicePageTemplate({
           <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
             
             {/* Tagline */}
-            <span className="bg-[#6875f5] text-white px-4 py-1.5 rounded-[6px] text-xs font-semibold uppercase tracking-wider mb-6">
+            <span className="bg-[#6875f5] text-white px-4 py-1.5 rounded-md text-xs font-semibold uppercase tracking-wider mb-6">
               Services
             </span>
 
@@ -73,7 +73,7 @@ export default function ServicePageTemplate({
             {subServices.map((sub, idx) => (
               <div
                 key={idx}
-                className="bg-white border border-slate-200/80 rounded-[12px] p-8 shadow-[0_2px_8px_rgba(0,0,0,0.01)] hover:shadow-md transition-all duration-300"
+                className="bg-white border border-slate-200/80 rounded-xl p-8 shadow-[0_2px_8px_rgba(0,0,0,0.01)] hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-[#6875f5]">
