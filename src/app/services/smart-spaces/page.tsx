@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Network, Laptop, Eye, Users, Layers, Headphones, Check } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function SmartSpacesPage() {
   const [showEmail, setShowEmail] = useState(false);
@@ -80,8 +81,12 @@ export default function SmartSpacesPage() {
             {servicesList.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <div
+                <motion.div
                   key={index}
+                  initial={{ opacity: 0, y: 70 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-120px" }}
+                  transition={{ duration: 0.9, delay: (index % 2) * 0.2 }}
                   className="border border-[#e5e7eb] rounded-[12px] p-8 bg-white hover:shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-300 flex flex-col justify-between min-h-[160px]"
                 >
                   <div>
@@ -95,14 +100,20 @@ export default function SmartSpacesPage() {
                       {service.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </section>
 
         {/* Why Choose Section */}
-        <section className="py-12 px-6 max-w-4xl mx-auto">
+        <motion.section 
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.9 }}
+          className="py-12 px-6 max-w-4xl mx-auto"
+        >
           <h3 className="text-xl sm:text-2xl font-bold text-center text-gray-900 mb-8">
             Why TechSuite?
           </h3>
@@ -135,10 +146,16 @@ export default function SmartSpacesPage() {
               </li>
             </ul>
           </div>
-        </section>
+        </motion.section>
 
         {/* Bottom CTA Banner */}
-        <section className="pb-24 px-6 max-w-4xl mx-auto">
+        <motion.section 
+          initial={{ opacity: 0, y: 70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 1.0 }}
+          className="pb-24 px-6 max-w-4xl mx-auto"
+        >
           {/* Gradient matches the exact peach-pink-lavender smooth transition */}
           <div className="relative overflow-visible rounded-[14px] bg-gradient-to-r from-[#FFE7D9] via-[#FFF1F3] to-[#E9EAFF] p-10 sm:p-12 text-center shadow-sm border border-white/50">
             <h3 className="text-[26px] sm:text-[30px] font-extrabold text-[#111827] mb-2 tracking-tight">
@@ -168,7 +185,7 @@ export default function SmartSpacesPage() {
               )}
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       <Footer />

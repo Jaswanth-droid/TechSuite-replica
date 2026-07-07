@@ -86,10 +86,10 @@ export default function ServicePageTemplate({
             {subServices.map((sub, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.5, delay: (idx % 2) * 0.15 }}
+                viewport={{ once: true, margin: "-120px" }}
+                transition={{ duration: 1.0, delay: (idx % 2) * 0.25 }}
                 className="bg-white border border-slate-200/80 rounded-xl p-8 shadow-[0_2px_8px_rgba(0,0,0,0.01)] hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
