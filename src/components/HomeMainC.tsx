@@ -66,17 +66,19 @@ export default function Services() {
 
   return (
     <section id="services" className="relative w-full py-24 px-4 sm:px-6 bg-white overflow-hidden">
-      {/* Subtle Hexagonal Background Pattern Overlay */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03] flex items-center justify-center">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="hexagons" width="50" height="43.4" patternUnits="userSpaceOnUse" patternTransform="scale(1.5)">
-              <path d="M25 0 L50 14.4 L50 43.4 L25 57.8 L0 43.4 L0 14.4 Z" fill="none" stroke="currentColor" strokeWidth="1" />
-              <path d="M25 43.4 L50 57.8 L50 86.8 L25 101.2 L0 86.8 L0 57.8 Z" fill="none" stroke="currentColor" strokeWidth="1" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#hexagons)" />
-        </svg>
+      {/* Centered Honeycomb Background Pattern matching the mockup */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[340px] pointer-events-none z-0 overflow-hidden select-none opacity-40">
+        <div className="w-full h-full [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,white_20%,transparent_100%)]">
+          <svg className="w-full h-full text-slate-100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="honeycomb" width="56" height="32.32" patternUnits="userSpaceOnUse" patternTransform="scale(1.2)">
+                <path d="M28 0 L56 8.08 L56 24.24 L28 32.32 L0 24.24 L0 8.08 Z" fill="currentColor" stroke="white" strokeWidth="1.5" />
+                <path d="M0 16.16 L28 24.24 L28 40.4 L0 48.48 L-28 40.4 L-28 16.16 Z" fill="currentColor" stroke="white" strokeWidth="1.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#honeycomb)" />
+          </svg>
+        </div>
       </div>
 
       <div className="mx-auto max-w-7xl relative z-10">
