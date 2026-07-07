@@ -112,16 +112,16 @@ export default function Services() {
               key={service.id}
               className="group relative rounded-2xl bg-white border border-slate-100 p-8 shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_20px_40px_rgba(79,70,229,0.08)] hover:border-indigo-100 transition-all duration-500 flex flex-col items-center text-center"
             >
-              {/* Icon Container with Wings */}
+              {/* Icon Container with Symmetrical Wings */}
               <div className="relative mb-6">
                 {/* Left Wing */}
-                <div className="absolute inset-0 bg-[#4f46e5]/10 rounded-[18px] transition-all duration-500 ease-out transform scale-75 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:-translate-x-3 group-hover:-rotate-12 z-0"></div>
+                <div className="absolute inset-y-1.5 left-0 w-full bg-[#5c68e2] rounded-[16px] transition-all duration-500 ease-out transform scale-90 opacity-0 group-hover:opacity-90 group-hover:scale-95 group-hover:-translate-x-4 z-0"></div>
                 {/* Right Wing */}
-                <div className="absolute inset-0 bg-[#4f46e5]/10 rounded-[18px] transition-all duration-500 ease-out transform scale-75 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-3 group-hover:rotate-12 z-0"></div>
+                <div className="absolute inset-y-1.5 right-0 w-full bg-[#5c68e2] rounded-[16px] transition-all duration-500 ease-out transform scale-90 opacity-0 group-hover:opacity-90 group-hover:scale-95 group-hover:translate-x-4 z-0"></div>
                 
                 {/* Icon box container (Main Card) */}
-                <div className="relative z-10 w-16 h-16 rounded-[18px] bg-blue-50/50 border border-blue-100/60 flex items-center justify-center shadow-sm transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_12px_24px_rgba(79,70,229,0.15)] group-hover:border-indigo-300">
-                  <div className="transition-transform duration-500 group-hover:scale-110">
+                <div className="relative z-10 w-16 h-16 rounded-[18px] bg-white border border-slate-100 flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_12px_24px_rgba(79,70,229,0.15)] group-hover:border-indigo-200">
+                  <div className="transition-transform duration-500 group-hover:scale-105">
                     {service.icon}
                   </div>
                 </div>
