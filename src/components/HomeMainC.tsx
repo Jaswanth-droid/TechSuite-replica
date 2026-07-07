@@ -20,12 +20,7 @@ export default function Services() {
       desc: "Seamlessly implement and optimize SAP ERP systems for scalable business operations.",
       linkText: "Explore ERP Services",
       route: "/services/erp",
-      icon: (
-        <svg className="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9h.008v.008H12V9zm-3 0h.008v.008H9V9zm6 0h.008v.008H15V9z" />
-        </svg>
-      )
+      icon: <img src="/erp.png" alt="ERP Solutions" className="w-10 h-10 object-contain" />
     },
     {
       id: "cloud",
@@ -33,11 +28,7 @@ export default function Services() {
       desc: "Secure, scalable, and cost-effective infrastructure for your digital workloads.",
       linkText: "Explore Cloud Services",
       route: "/services/cloud-services",
-      icon: (
-        <svg className="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
-        </svg>
-      )
+      icon: <img src="/cloud.png" alt="Cloud Services" className="w-10 h-10 object-contain" />
     },
     {
       id: "analytics",
@@ -45,11 +36,7 @@ export default function Services() {
       desc: "Turn real-time SAP data into powerful insights with actionable dashboards.",
       linkText: "Explore Analytics",
       route: "/services/planning-analytics",
-      icon: (
-        <svg className="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-        </svg>
-      )
+      icon: <img src="/analytics.png" alt="Planning & Analytics" className="w-10 h-10 object-contain" />
     },
     {
       id: "automation",
@@ -57,11 +44,7 @@ export default function Services() {
       desc: "Streamline operations using AI-driven digital workers and intelligent workflows.",
       linkText: "Explore Automation",
       route: "/services/ai-automation",
-      icon: (
-        <svg className="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M12 15H8a1 1 0 01-1-1v-4a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1zm8.25-3h-1.5M4.5 12H3m15-5.25l-1.5 1.5M6.75 6.75l1.5 1.5m8.25 7.5l-1.5-1.5M6.75 17.25l1.5-1.5" />
-        </svg>
-      )
+      icon: <img src="/automation.png" alt="AI & Intelligent Automation" className="w-10 h-10 object-contain" />
     },
     {
       id: "cybersecurity",
@@ -69,11 +52,7 @@ export default function Services() {
       desc: "End-to-end protection across SAP, cloud, and IT environments.",
       linkText: "Explore Cybersecurity",
       route: "/services/cybersecurity",
-      icon: (
-        <svg className="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-        </svg>
-      )
+      icon: <img src="/security.png" alt="Cyber Security" className="w-10 h-10 object-contain" />
     },
     {
       id: "infrastructure",
@@ -81,11 +60,7 @@ export default function Services() {
       desc: "Integrated infrastructure and IoT solutions to power smart enterprise environments.",
       linkText: "Explore Smart Infrastructure",
       route: "/services/smart-spaces",
-      icon: (
-        <svg className="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6h1.5m-1.5 3h1.5m-1.5 3h1.5M9 16.5h1.5m3 0h1.5" />
-        </svg>
-      )
+      icon: <img src="/infrastructure.png" alt="Smart Spaces & IT Infrastructure" className="w-10 h-10 object-contain" />
     }
   ];
 
