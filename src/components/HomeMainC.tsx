@@ -66,43 +66,14 @@ export default function Services() {
 
   return (
     <section id="services" className="relative w-full py-24 px-4 sm:px-6 bg-white overflow-hidden">
-      {/* Centered Honeycomb Background Pattern matching the mockup */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[340px] pointer-events-none z-0 overflow-hidden select-none opacity-40">
-        <div className="w-full h-full [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,white_20%,transparent_100%)]">
-          <svg className="w-full h-full text-slate-100" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="honeycomb" width="56" height="32.32" patternUnits="userSpaceOnUse" patternTransform="scale(1.2)">
-                <path d="M28 0 L56 8.08 L56 24.24 L28 32.32 L0 24.24 L0 8.08 Z" fill="currentColor" stroke="white" strokeWidth="1.5" />
-                <path d="M0 16.16 L28 24.24 L28 40.4 L0 48.48 L-28 40.4 L-28 16.16 Z" fill="currentColor" stroke="white" strokeWidth="1.5" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#honeycomb)" />
-          </svg>
-        </div>
-      </div>
-
       <div className="mx-auto max-w-7xl relative z-10">
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-20 relative">
-         
-
-          {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 bg-slate-100/80 border border-slate-200 px-4 py-1.5 rounded-full mb-6 relative z-10">
-            <svg className="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-            </svg>
-            <span className="text-[12px] font-semibold text-slate-700 tracking-wide uppercase">
-              What We Do?
-            </span>
-          </div>
-
-          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight relative z-10">
-            Services
-          </h2>
-          
-          <p className="mt-4 text-[14px] sm:text-[15px] text-slate-500 font-medium  max-w-2xl mx-auto leading-relaxed relative z-10">
-            "We help businesses scale with cloud-native ERP, advanced analytics, intelligent automation, and secure digital infrastructure."
-          </p>
+        <div className="text-center w-full mb-20 relative flex justify-center">
+          <img 
+            src="/services-header.png" 
+            alt="Services - What We Do?" 
+            className="w-full max-w-3xl md:max-w-4xl lg:max-w-5xl h-auto object-contain select-none pointer-events-none"
+          />
         </div>
 
         {/* 3x2 Grid of Services */}

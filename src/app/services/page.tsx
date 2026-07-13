@@ -6,6 +6,24 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function ServicesPage() {
+  const [isHeaderVisible, setIsHeaderVisible] = React.useState(false);
+  const [isSubtextVisible, setIsSubtextVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const headerTimer = setTimeout(() => {
+      setIsHeaderVisible(true);
+    }, 500);
+
+    const subtextTimer = setTimeout(() => {
+      setIsSubtextVisible(true);
+    }, 1500);
+
+    return () => {
+      clearTimeout(headerTimer);
+      clearTimeout(subtextTimer);
+    };
+  }, []);
+
   const items = [
     {
       id: "erp",
@@ -137,7 +155,10 @@ export default function ServicesPage() {
           </div>
 
           {/* Heading */}
-          <h1 className="flex flex-col text-center text-[55px] sm:text-[51px] lg:text-[51px] font-bold tracking-tight text-[#2d2d2d] leading-[1.1] md:leading-[1.05]">
+          <h1 
+            className="flex flex-col text-center text-[55px] sm:text-[51px] lg:text-[51px] font-bold tracking-tight text-[#2d2d2d] leading-[1.1] md:leading-[1.05] transition-opacity duration-1000"
+            style={{ opacity: isHeaderVisible ? 1 : 0 }}
+          >
             <span>Innovative Reliable</span>
             <span className="bg-linear-to-r from-orange-400 via-pink-400 to-indigo-500 bg-clip-text text-transparent pb-2 text-[65px] sm:text-[90px] lg:text-[80px]">
               Client-Centric
@@ -145,7 +166,10 @@ export default function ServicesPage() {
           </h1>
 
           {/* Subtext */}
-          <p className="mt-8 max-w-3xl text-center text-[15px] sm:text-[16px] text-slate-500 font-normal leading-relaxed">
+          <p 
+            className="mt-8 max-w-3xl text-center text-[15px] sm:text-[16px] text-slate-500 font-normal leading-relaxed transition-opacity duration-1000"
+            style={{ opacity: isSubtextVisible ? 1 : 0 }}
+          >
             At TechSuite, our vision is to empower businesses with transformative technology that drives efficiency, agility, and innovation. We are committed to delivering trust, excellence, and customer success through cutting-edge solutions in ERP, Analytics, AI, and Cloud Services.
           </p>
 
