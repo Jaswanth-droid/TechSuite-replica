@@ -66,11 +66,8 @@ export default function AiAutomationPage() {
 
           {/* Main Colored Gradient Title */}
           <h1 className="text-[44px] sm:text-[54px] lg:text-[60px] font-extrabold tracking-tight mb-8 leading-tight">
-            <span className="bg-gradient-to-r from-[#FFB285] to-[#FF7096] bg-clip-text text-transparent block sm:inline">
-              AI & Intelligent
-            </span>{" "}
-            <span className="bg-gradient-to-r from-[#9181FC] to-[#5DBEFF] bg-clip-text text-transparent block sm:inline">
-              Automation
+            <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500 bg-clip-text text-transparent block sm:inline">
+              AI & Intelligent Automation
             </span>
           </h1>
 

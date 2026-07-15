@@ -46,11 +46,8 @@ export default function ErpPage() {
         <section className="pt-24 pb-16 px-4 text-center max-w-4xl mx-auto">
           {/* Main Colored Gradient Title */}
           <h1 className="text-[48px] sm:text-[58px] lg:text-[66px] font-extrabold tracking-tight mb-8 leading-none">
-            <span className="bg-gradient-to-r from-[#FFB285] to-[#FF7096] bg-clip-text text-transparent">
-              ERP
-            </span>{" "}
-            <span className="bg-gradient-to-r from-[#9181FC] to-[#5DBEFF] bg-clip-text text-transparent">
-              Solutions
+            <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500 bg-clip-text text-transparent">
+              ERP Solutions
             </span>
           </h1>
 

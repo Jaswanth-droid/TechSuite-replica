@@ -46,11 +46,8 @@ export default function PlanningAnalyticsPage() {
 
           {/* Main Colored Gradient Title */}
           <h1 className="text-[48px] sm:text-[58px] lg:text-[66px] font-extrabold tracking-tight mb-8 leading-none">
-            <span className="bg-gradient-to-r from-[#FFB285] to-[#FF7096] bg-clip-text text-transparent">
-              Planning
-            </span>{" "}
-            <span className="bg-gradient-to-r from-[#9181FC] to-[#5DBEFF] bg-clip-text text-transparent">
-              & Analytics
+            <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500 bg-clip-text text-transparent">
+              Planning & Analytics
             </span>
           </h1>
 
