@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Lightbulb, Handshake, Rocket, Users } from "lucide-react";
 
 export default function AboutPage() {
   const [isHeaderVisible, setIsHeaderVisible] = React.useState(false);
@@ -96,49 +97,60 @@ export default function AboutPage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 py-16">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h3 className="text-2xl font-bold text-blue-400">
-        Innovative
-      </h3>
-      <p className="mt-4 text-slate-600 leading-relaxed">
-        To boost business growth,  we prioritize innovation and  the exploration  of new ideas and principles.
-      </p>
-    </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <Lightbulb className="w-6 h-6 text-[#5c68e2]" />
+              <h3 className="text-2xl font-bold text-[#5c68e2]">
+                Innovative
+              </h3>
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              To boost business growth,  we prioritize innovation and  the exploration  of new ideas and principles.
+            </p>
+          </div>
 
-    
-    <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h3 className="text-2xl font-bold text-blue-400">
-Human-focused
-      </h3>
-      <p className="mt-4  text-slate-600 leading-relaxed">
-We prioritize human emotions and  work values,  essential aspects of any organization.  
-      </p>
-    </div>
+          
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <Handshake className="w-6 h-6 text-[#5c68e2]" />
+              <h3 className="text-2xl font-bold text-[#5c68e2]">
+                Human-focused
+              </h3>
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              We prioritize human emotions and  work values,  essential aspects of any organization.  
+            </p>
+          </div>
 
-    
-    <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h3 className="text-2xl font-bold text-blue-400">
-        Experts
-      </h3>
-      <p className="mt-4 text-slate-600 leading-relaxed">
-        Our expert consultants  are ready to guide your  business expansiion.
-      </p>
-    </div>
+          
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <Rocket className="w-6 h-6 text-[#5c68e2]" />
+              <h3 className="text-2xl font-bold text-[#5c68e2]">
+                Experts
+              </h3>
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              Our expert consultants  are ready to guide your  business expansion.
+            </p>
+          </div>
 
-    
-    <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h3 className="text-2xl font-bold text-blue-400">
-        Customer First
-      </h3>
-      <p className="mt-4 text-slate-600 leading-relaxed">We're here round the clock  to help with your customer needs  and requests
-      </p>
-    </div>
+          
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <Users className="w-6 h-6 text-[#5c68e2]" />
+              <h3 className="text-2xl font-bold text-[#5c68e2]">
+                Customer First
+              </h3>
+            </div>
+            <p className="text-slate-600 leading-relaxed">We're here round the clock  to help with your customer needs  and requests
+            </p>
+          </div>
 
-  </div>
-</section>
-
+        </div>
+      </section>
 
       </main>
 
